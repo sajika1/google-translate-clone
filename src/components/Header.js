@@ -12,10 +12,12 @@ import Avatar from '@material-ui/core/Avatar';
 import MenuIcon from '@material-ui/icons/Menu';
 import AppsIcon from '@material-ui/icons/Apps';
 import PopUp from './PopUp';
+import UserInfo from './UserInfo';
 
 function Header() {
     const [show , setShow] = useState(false);
     const [showPopUp , setShowPopUp] = useState(false);
+    const [showUserInfo ,  setShowUserInfo] = useState(false);
    
     return (
         <header className={styles.header}>
@@ -40,10 +42,11 @@ function Header() {
                     <AppsIcon/>
                 </IconButton>
 
-                <IconButton className={styles.header_icon}>
+                <IconButton className={styles.header_icon} onClick={()=>setShowUserInfo(true)}>
                     <Avatar className={styles.header_avatar}/>
                 </IconButton>
             </div>
+            <UserInfo showUserInfo={showUserInfo} setShowUserInfo={setShowUserInfo}/>
             <PopUp showPopUp={showPopUp} setShowPopUp={setShowPopUp}/>
             <Drawer show={show} setShow={setShow}/>
         </header>
