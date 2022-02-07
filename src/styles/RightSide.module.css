@@ -1,0 +1,10 @@
+.right_side{
+    flex: 1;
+}
+
+
+@media screen and (max-width:768px) {
+    .right_side{
+        display: none;
+    }
+}

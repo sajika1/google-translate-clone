@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.change_btn{
+    justify-self: center ;
+    margin: 0 30px !important;
+}
+
+@media screen and (max-width:768px) {
+    .first_responsive{
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width:400){
+    .change_btn{
+        margin: 0;
+    }
+}

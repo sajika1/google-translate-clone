@@ -1,0 +1,13 @@
+
+@media screen and (max-width:1280px) {
+    .buttons{
+        padding: 10px 0 0 10px;
+    }    
+}
+
+
+@media screen and (max-width:768px) {
+    .buttons{
+        display: none;
+    }
+}

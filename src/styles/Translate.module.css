@@ -1,0 +1,29 @@
+.translate{
+    width: 100%;
+    min-height: 220px;
+    border-radius: 10px;
+    color: rgba(0,0,0,0.87);
+    box-shadow: 1px 8px 7px -7px #43434356;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex-grow: 1;
+}
+
+.mid_line{
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+
+
+@media screen and (max-width:1279px) {
+    .translate{
+        border-radius: 0;
+    }
+}

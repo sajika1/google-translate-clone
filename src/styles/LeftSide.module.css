@@ -1,0 +1,29 @@
+.left_side{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.close{
+    position: absolute !important;
+    right: 8px;
+    top: 10px;
+    z-index: 1000;
+}
+
+.textarea{
+    padding: 20px 58px 20px 24px;
+    background: transparent;
+    display: block;
+    min-height: 74px;
+    color: #3c4043;
+    flex: 1;
+    font-family: inherit;
+    white-space: pre-wrap;
+    width: 100%;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 28px;
+    outline: none;
+}

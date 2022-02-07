@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+// styles (styles in style module format imported from styles folder)
+import styles from './styles/App.module.css';
+
+// import components from components folder
+import Header from './components/Header';
+import Main from './components/Main';
+
+import TranslateContextProvider from './context/TranslateContextProvider';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className={styles.app}>
+        <Header />
+        <div className={styles.side} />
+        {/* Translate Resault Context Provider */}
+        <TranslateContextProvider>
+          <Main />
+        </TranslateContextProvider>
+      </div>
   );
 }
 

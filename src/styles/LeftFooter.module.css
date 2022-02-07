@@ -1,0 +1,22 @@
+.left_footer{
+    padding: 10px 30px 10px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 11px;
+}
+
+.iconButton{
+    padding: 0 !important;
+}
+
+.icon{
+    font-size: 18px !important;
+}
