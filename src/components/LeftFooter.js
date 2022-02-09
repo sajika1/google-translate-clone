@@ -17,15 +17,15 @@ import { useEffect } from 'react';
 import { TranslateContext } from '../context/TranslateContextProvider';
 import { useContext } from 'react';
 
-function LeftFooter({counter , input}) {
+function LeftFooter({input}) {
 
     const {dispatch} = useContext(TranslateContext);
 
     useEffect(()=>{
-        if (counter === 0) {
+        if (input.length === 0) {
             dispatch({type:'clear'})
         }
-    },[counter])
+    },[input])
 
     return (
         <div className={styles.left_footer}>
@@ -34,20 +34,18 @@ function LeftFooter({counter , input}) {
                 <MicIcon />
             </IconButton>
             {
-                counter > 0 ?
-                    input !== ' ' ?
-                                <IconButton  data-tip="listen" data-place="bottom">
-                                    <VolumeUpIcon />
-                                </IconButton>
-                                :
-                                <IconButton  disabled>
-                                    <VolumeUpIcon />
-                                </IconButton>
-                            :   null
+                input !== ' ' ?
+                    <IconButton  data-tip="listen" data-place="bottom">
+                        <VolumeUpIcon />
+                    </IconButton>
+                    :
+                    <IconButton  disabled>
+                        <VolumeUpIcon />
+                    </IconButton>
             }
            </div>
            <div className={styles.counter}>
-               <p>{counter}/5000</p>
+               <p>{input.length}/5000</p>
                <div>
                     <div style={{display:'inline'}} data-tip="turn on virtual keyboard" data-place="bottom">
                         <IconButton disabled className={styles.iconButton}>

@@ -1,8 +1,9 @@
+import React, { useContext} from 'react';
+
 import { IconButton } from '@material-ui/core';
 import { Share, StarBorderOutlined, ThumbsUpDownOutlined } from '@material-ui/icons';
 import VolumeUp from '@material-ui/icons/VolumeUp';
 import FilterNoneOutlinedIcon from '@material-ui/icons/FilterNoneOutlined';
-import React, { useContext, useState } from 'react'
 
 import styles from '../styles/TranslateResault.module.css';
 
